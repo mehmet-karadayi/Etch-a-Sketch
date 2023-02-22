@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(64, 15px [col-start]);
+    grid-template-rows: repeat(64, 15px [row-start]);
+    border: 1px solid black;
+    width: 962px;
+    height: 962px
+}
+
+.box{
+    background-color: blueviolet;
+    border: 1px solid black;
+    /* width: 15px; */
+    /* height: 60px; */ 
+} 
+
+.box:hover {
+    background-color: black;
+}
+  
