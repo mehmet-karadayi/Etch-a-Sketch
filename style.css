@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
-* {
-    background-color: #F24949;
-    box-sizing: border-box;
-}
-
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: #F24949;
 }
 
 header{
@@ -29,21 +25,46 @@ header{
 }
 
 .left{
-    width : 30%;
-    height: 400px;
-    background-color: aliceblue;
-   
-    
+    width : 20%;
+    height: 300px;
+    background-color: #DADADA;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px black;
 }
 
+#currentRange, #currentColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
 
+text{
+    font-size: large;
+}
+
+button {
+    padding:.5rem 1.5rem;
+    border-radius: 15px;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
 
 .grid{
     display: grid;
     grid-template-columns: repeat(64, 15px [col-start]);
     border: 1px solid black;
-    width: 962px;
-    height: 962px
+    width: 960px;
+    height: 960px
 
 }
 
