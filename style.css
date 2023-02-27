@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Gloock&display=swap');
 
 body{
     display: flex;
@@ -8,32 +8,34 @@ body{
 }
 
 header{
-    width: 100%;
     font-family: 'Babylonica', cursive;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     color: #DAA520;
     margin-bottom: 5px;
-
+    border: 8px solid #ffce72;
 }
 
 .container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
 }
 
-.left{
-    width : 20%;
-    height: 300px;
+.bottom{
+    width : 960px;
     background-color: #DADADA;
     display: flex;
-    flex-direction : column;
+    flex-direction : row;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: 15px 15px 10px black;
+    padding: 10px;
+    font-family: 'gloock';
 }
 
 #currentRange, #currentColor {
@@ -41,7 +43,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 text{
@@ -51,6 +52,7 @@ text{
 button {
     padding:.5rem 1.5rem;
     border-radius: 15px;
+    font-family: 'gloock';
 
 }
 
@@ -62,9 +64,9 @@ button:hover {
 .grid{
     display: grid;
     grid-template-columns: repeat(64, 15px [col-start]);
-    border: 1px solid black;
-    width: 960px;
-    height: 960px
+    max-width: 960px;
+    height: 960px;
+    flex: 1 0 0;
 
 }
 
@@ -78,4 +80,65 @@ button:hover {
 .box:hover {
     background-color: black;
 }
+
   
+input[type="color"] {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+
+  }
+
+
+
+
+
+  /* Styling for the popup form */
+  #popup-form {
+    display: none;
+    position: bottom absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+  #popup-form h2 {
+    margin-top: 0;
+  }
+  #popup-form label, #popup-form input, #popup-form textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #popup-form input, #popup-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  #popup-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #popup-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  #popup-form button[type="button"] {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #popup-form button[type="button"]:hover {
+    background-color: #999;
+  }
