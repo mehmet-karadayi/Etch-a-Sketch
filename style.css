@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Gloock&display=swap');
 
+@media only screen and (max-width: 600px) {
+    /* styles for screens smaller than 600px */
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  
 body{
     display: flex;
     flex-direction: column;
@@ -88,57 +98,4 @@ input[type="color"] {
     padding: 0;
     margin: 0;
 
-  }
-
-
-
-
-
-  /* Styling for the popup form */
-  #popup-form {
-    display: none;
-    position: bottom absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 1;
-  }
-  #popup-form h2 {
-    margin-top: 0;
-  }
-  #popup-form label, #popup-form input, #popup-form textarea {
-    display: block;
-    margin-bottom: 10px;
-  }
-  #popup-form input, #popup-form textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #000;
-    border-radius: 3px;
-  }
-  #popup-form button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  #popup-form button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  #popup-form button[type="button"] {
-    background-color: #ccc;
-    color: #000;
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  #popup-form button[type="button"]:hover {
-    background-color: #999;
   }
